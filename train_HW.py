@@ -8,7 +8,7 @@ EPOCHS = 100 #How many updates will happen
 ETA = .01 #Learning rate
 PATTERN = "Opacity" #This should match your training files
 REPS = 10 #Repitions
-WD = "C:\\Users\\Brandon\\OneDrive\\Research\\Opacity\\Opacity_Denial\\HayesAndWilson\\" #Working directory
+WD = "" #Working directory, if you want to change that from the current one you're in
 INIT_W = 0.0 #either a float or the string "rand"
 ################################################	 
 
