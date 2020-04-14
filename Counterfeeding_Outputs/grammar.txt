@@ -1,0 +1,17 @@
+*[+syllabic][+syllabic]	(tier=default)	4.092
+*[+word_boundary][-syllabic]	(tier=default)	3.737
+*[-syllabic][+word_boundary]	(tier=default)	3.946
+*[-word_boundary][+back]	(tier=default)	2.455
+*[-anterior][-high]	(tier=default)	3.842
+*[-high,-back][-word_boundary][+high]	(tier=default)	3.891
+*[+high][-word_boundary][-high]	(tier=default)	4.251
+*[-back,-tense][-word_boundary][-high,-tense]	(tier=default)	3.182
+*[-high][+anterior][+high]	(tier=default)	3.7
+*[+tense][-word_boundary][-high,+tense]	(tier=default)	3.176
+*[+tense][+dorsal][+tense]	(tier=default)	3.179
+*[+tense][-anterior][+tense]	(tier=default)	3.137
+*[-back,-tense][+dorsal][-tense]	(tier=default)	3.179
+*[-back,-tense][-anterior][-tense]	(tier=default)	3.137
+*[-syllabic][-syllabic]	(tier=default)	3.444
+*[+back][+word_boundary]	(tier=default)	2.371
+*[-high,-back][-anterior]	(tier=default)	1.507

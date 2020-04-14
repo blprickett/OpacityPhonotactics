@@ -1,0 +1,1526 @@
+
+Reading the feature tiers ...
+[word_boundary, coronal, anterior, dorsal, high, back, tense, syllabic]
+done
+
+Reading the phonemes ...
+0	#	[+word_boundary,0coronal,0anterior,0dorsal,0high,0back,0tense,0syllabic]
+1	S	[-word_boundary,+coronal,-anterior,0dorsal,0high,0back,0tense,-syllabic]
+2	k	[-word_boundary,0coronal,0anterior,+dorsal,0high,0back,0tense,-syllabic]
+3	i	[-word_boundary,0coronal,0anterior,0dorsal,+high,-back,+tense,+syllabic]
+4	I	[-word_boundary,0coronal,0anterior,0dorsal,+high,-back,-tense,+syllabic]
+5	e	[-word_boundary,0coronal,0anterior,0dorsal,-high,-back,+tense,+syllabic]
+6	E	[-word_boundary,0coronal,0anterior,0dorsal,-high,-back,-tense,+syllabic]
+7	a	[-word_boundary,0coronal,0anterior,0dorsal,-high,+back,-tense,+syllabic]
+8	s	[-word_boundary,+coronal,+anterior,0dorsal,0high,0back,0tense,-syllabic]
+number of segments: 9
+done
+
+Reading the natural classes ...
+0	[+word_boundary]
+1	[-word_boundary]
+2	[+back]
+3	[-high,+tense]
+4	[-high,-back,-tense]
+5	[+coronal]
+6	[-high,-tense]
+7	[+high,+tense]
+8	[+high,-tense]
+9	[-high,-back]
+10	[+dorsal]
+11	[-high]
+12	[+tense]
+13	[-back,-tense]
+14	[-tense]
+15	[-syllabic]
+16	[+high]
+17	[+anterior]
+18	[-anterior]
+19	[-back]
+20	[+syllabic]
+number of natural classes: 21
+
+Mapping natural classes to the segments they contain ...
+size of the natural class: 1
+[+word_boundary] -> [#] ([true, false, false, false, false, false, false, false, false])
+size of the natural class: 8
+[-word_boundary] -> [S, k, i, I, e, E, a, s] ([false, true, true, true, true, true, true, true, true])
+size of the natural class: 1
+[+back] -> [a] ([false, false, false, false, false, false, false, true, false])
+size of the natural class: 1
+[-high,+tense] -> [e] ([false, false, false, false, false, true, false, false, false])
+size of the natural class: 1
+[-high,-back,-tense] -> [E] ([false, false, false, false, false, false, true, false, false])
+size of the natural class: 2
+[+coronal] -> [S, s] ([false, true, false, false, false, false, false, false, true])
+size of the natural class: 2
+[-high,-tense] -> [E, a] ([false, false, false, false, false, false, true, true, false])
+size of the natural class: 1
+[+high,+tense] -> [i] ([false, false, false, true, false, false, false, false, false])
+size of the natural class: 1
+[+high,-tense] -> [I] ([false, false, false, false, true, false, false, false, false])
+size of the natural class: 2
+[-high,-back] -> [e, E] ([false, false, false, false, false, true, true, false, false])
+size of the natural class: 1
+[+dorsal] -> [k] ([false, false, true, false, false, false, false, false, false])
+size of the natural class: 3
+[-high] -> [e, E, a] ([false, false, false, false, false, true, true, true, false])
+size of the natural class: 2
+[+tense] -> [i, e] ([false, false, false, true, false, true, false, false, false])
+size of the natural class: 2
+[-back,-tense] -> [I, E] ([false, false, false, false, true, false, true, false, false])
+size of the natural class: 3
+[-tense] -> [I, E, a] ([false, false, false, false, true, false, true, true, false])
+size of the natural class: 3
+[-syllabic] -> [S, k, s] ([false, true, true, false, false, false, false, false, true])
+size of the natural class: 2
+[+high] -> [i, I] ([false, false, false, true, true, false, false, false, false])
+size of the natural class: 1
+[+anterior] -> [s] ([false, false, false, false, false, false, false, false, true])
+size of the natural class: 1
+[-anterior] -> [S] ([false, true, false, false, false, false, false, false, false])
+size of the natural class: 4
+[-back] -> [i, I, e, E] ([false, false, false, true, true, true, true, false, false])
+size of the natural class: 5
+[+syllabic] -> [i, I, e, E, a] ([false, false, false, true, true, true, true, true, false])
+
+Identifying minimal natural classes (i.e., classes that contain exactly one segment)
+minimals:
+[+word_boundary]
+[-anterior]
+[+dorsal]
+[+high, +tense]
+[+high, -tense]
+[-high, +tense]
+[-high, -back, -tense]
+[+back]
+[+anterior]
+done
+
+Mapping segments to the natural classes that contain them ...
+done
+
+Mapping natural classes to slice/row/column indexations ...
+
+Reading trigram natural classes ...
+done
+default projection? true
+Projection 0 is default
+	visible segments: #, S, k, i, I, e, E, a, s, 
+	active natural classes: 
+		[+word_boundary]
+		[-word_boundary]
+		[+back]
+		[-high,+tense]
+		[-high,-back,-tense]
+		[+coronal]
+		[-high,-tense]
+		[+high,+tense]
+		[+high,-tense]
+		[-high,-back]
+		[+dorsal]
+		[-high]
+		[+tense]
+		[-back,-tense]
+		[-tense]
+		[-syllabic]
+		[+high]
+		[+anterior]
+		[-anterior]
+		[-back]
+		[+syllabic]
+
+Determining the size of each natural class on each projection
+(ignore sizes for [+word_boundary] class) ...
+Projection: default
+	[+word_boundary]	1
+	[-word_boundary]	8
+	[+back]	1
+	[-high, +tense]	1
+	[-high, -back, -tense]	1
+	[+coronal]	2
+	[-high, -tense]	2
+	[+high, +tense]	1
+	[+high, -tense]	1
+	[-high, -back]	2
+	[+dorsal]	1
+	[-high]	3
+	[+tense]	2
+	[-back, -tense]	2
+	[-tense]	3
+	[-syllabic]	3
+	[+high]	2
+	[+anterior]	1
+	[-anterior]	1
+	[-back]	4
+	[+syllabic]	5
+done
+
+Ordering natural classes by (descending) size on each projection
+Projection: default
+[0, 1, 20, 19, 11, 14, 15, 5, 6, 9, 12, 13, 16, 2, 3, 4, 7, 8, 10, 17, 18]
+
+Determining the simplified representations of segments on projections ...
+Segment representations on projection default
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+done
+
+Reading the corpus ...
+size of corpus: 1480
+empirical length distribution: [0, 0, 0, 1480, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+maximum nonzero length: 3
+done
+done
+
+Running iterative feature selection ...
+Gaussian regularizer: mu=0.0 sigma^2=1.0
+strictly more general than: [-high, -tense](2), [+back] (projection=0)
+strictly more general than: [-high, -back](2), [-high, +tense] (projection=0)
+strictly more general than: [-high, -tense](2), [-high, -back, -tense] (projection=0)
+strictly more general than: [-syllabic](3), [+coronal] (projection=0)
+strictly more general than: [-high](3), [-high, -tense] (projection=0)
+strictly more general than: [+tense](2), [+high, +tense] (projection=0)
+strictly more general than: [-back, -tense](2), [+high, -tense] (projection=0)
+strictly more general than: [-high](3), [-high, -back] (projection=0)
+strictly more general than: [-syllabic](3), [+dorsal] (projection=0)
+strictly more general than: [+syllabic](5), [-high] (projection=0)
+strictly more general than: [-back](4), [+tense] (projection=0)
+strictly more general than: [-tense](3), [-back, -tense] (projection=0)
+strictly more general than: [+syllabic](5), [-tense] (projection=0)
+strictly more general than: [-word_boundary](8), [-syllabic] (projection=0)
+strictly more general than: [-back](4), [+high] (projection=0)
+strictly more general than: [+coronal](2), [+anterior] (projection=0)
+strictly more general than: [+coronal](2), [-anterior] (projection=0)
+strictly more general than: [+syllabic](5), [-back] (projection=0)
+strictly more general than: [-word_boundary](8), [+syllabic] (projection=0)
+
+digraph G
+{
+graph [size = "7.5,7.5" rankdir = LR]
+node [shape = circle]
+0 [style = bold]
+0 -> 1 [label =""]
+1 -> 15 [label =""]
+1 -> 20 [label =""]
+5 -> 17 [label =""]
+5 -> 18 [label =""]
+6 -> 2 [label =""]
+6 -> 4 [label =""]
+9 -> 3 [label =""]
+11 -> 6 [label =""]
+11 -> 9 [label =""]
+12 -> 7 [label =""]
+13 -> 8 [label =""]
+14 -> 13 [label =""]
+15 -> 5 [label =""]
+15 -> 10 [label =""]
+19 -> 12 [label =""]
+19 -> 16 [label =""]
+20 -> 11 [label =""]
+20 -> 14 [label =""]
+20 -> 19 [label =""]
+}
+
+Making msg graph for projection default
+digraph G
+{
+node [shape = circle]
+2 -> 1 [label =""]
+2 -> 6 [label =""]
+2 -> 11 [label =""]
+2 -> 14 [label =""]
+2 -> 20 [label =""]
+3 -> 1 [label =""]
+3 -> 9 [label =""]
+3 -> 11 [label =""]
+3 -> 12 [label =""]
+3 -> 19 [label =""]
+3 -> 20 [label =""]
+4 -> 1 [label =""]
+4 -> 6 [label =""]
+4 -> 9 [label =""]
+4 -> 11 [label =""]
+4 -> 13 [label =""]
+4 -> 14 [label =""]
+4 -> 19 [label =""]
+4 -> 20 [label =""]
+7 -> 1 [label =""]
+7 -> 12 [label =""]
+7 -> 16 [label =""]
+7 -> 19 [label =""]
+7 -> 20 [label =""]
+8 -> 1 [label =""]
+8 -> 13 [label =""]
+8 -> 14 [label =""]
+8 -> 16 [label =""]
+8 -> 19 [label =""]
+8 -> 20 [label =""]
+10 -> 1 [label =""]
+10 -> 15 [label =""]
+17 -> 1 [label =""]
+17 -> 5 [label =""]
+17 -> 15 [label =""]
+18 -> 1 [label =""]
+18 -> 5 [label =""]
+18 -> 15 [label =""]
+}
+number of transitions: 38
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.047
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 17 (3.8548752834467117%)
+Compiling new constraint *[+syllabic][+syllabic]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 4 states, 19 transitions
+new constraint:	*[+syllabic][+syllabic]	(tier=default)	O = 0.0	E = 1147.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.200328987121969
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 49 (11.11111111111111%)
+Compiling new constraint *[+word_boundary][-syllabic]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 5 states, 28 transitions
+new constraint:	*[+word_boundary][-syllabic]	(tier=default)	O = 0.0	E = 737.3333333333334
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.256353451135645
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.561807981230769
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.032
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 127 (28.798185941043087%)
+Compiling new constraint *[-syllabic][+word_boundary]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 5 states, 28 transitions
+new constraint:	*[-syllabic][+word_boundary]	(tier=default)	O = 0.0	E = 541.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.675372509168591
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.194060651638253
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.194060651638253
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.0
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 434 (98.4126984126984%)
+Compiling new constraint *[-word_boundary][+back]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 5 states, 28 transitions
+new constraint:	*[-word_boundary][+back]	(tier=default)	O = 0.0	E = 300.6666666666667
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.1535471998584645
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.029358859903387
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.209800702554329
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.626440026896432
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.094
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 440 (99.77324263038548%)
+Compiling new constraint *[+high][+anterior]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 6 states, 37 transitions
+new constraint:	*[+high][+anterior]	(tier=default)	O = 0.0	E = 209.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.1891230853701975
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.1705297268982795
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.229277732589266
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.518596361043295
+4	*[+high][+anterior]	(tier=default)	weight=	4.139403614776484
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.015
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 1090 (11.769787279991363%)
+Compiling new constraint *[-high,-back][-word_boundary][+high]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 11 states, 82 transitions
+new constraint:	*[-high,-back][-word_boundary][+high]	(tier=default)	O = 0.0	E = 328.6666666666667
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.784387919648375
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.54339909753697
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.569452252844634
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.623311938080537
+4	*[+high][+anterior]	(tier=default)	weight=	4.243215901096867
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.519972060182785
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.031
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 1235 (13.335492927329662%)
+Compiling new constraint *[+high][-word_boundary][-high]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 15 states, 118 transitions
+new constraint:	*[+high][-word_boundary][-high]	(tier=default)	O = 0.0	E = 287.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.657466879751639
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.68794884436435
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.701071831115395
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.421845664719651
+4	*[+high][+anterior]	(tier=default)	weight=	3.848585044875536
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.631122076664048
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.335175288978387
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.01, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2014 (21.74711154302991%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 433 (98.1859410430839%)
+Compiling new constraint *[+anterior][+high]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 18 states, 145 transitions
+new constraint:	*[+anterior][+high]	(tier=default)	O = 0.0	E = 92.33333333333333
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.695708466206709
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.717306594316474
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.772737446627914
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.473766318163862
+4	*[+high][+anterior]	(tier=default)	weight=	1.6020055339649866
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.385271747204673
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.439968066254869
+7	*[+anterior][+high]	(tier=default)	weight=	3.5880332493575353
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.024
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2203 (23.787927869560523%)
+Compiling new constraint *[+tense][-word_boundary][+high,+tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 38 states, 325 transitions
+new constraint:	*[+tense][-word_boundary][+high,+tense]	(tier=default)	O = 0.0	E = 107.66666666666667
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.688479663249511
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.728583366633574
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.78759699380941
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.524867779233206
+4	*[+high][+anterior]	(tier=default)	weight=	1.5304069008422334
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.2297501929988925
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.514001162246992
+7	*[+anterior][+high]	(tier=default)	weight=	3.6032779322678072
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.4520850888810517
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.015
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2050 (22.135838462369076%)
+Compiling new constraint *[+tense][+dorsal][+tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 40 states, 343 transitions
+new constraint:	*[+tense][+dorsal][+tense]	(tier=default)	O = 0.0	E = 47.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.687431956717225
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.791270534288576
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.8402110740489
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.552850611615918
+4	*[+high][+anterior]	(tier=default)	weight=	1.5566556643156273
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.257541730493112
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.45815665336227
+7	*[+anterior][+high]	(tier=default)	weight=	3.6239426962064574
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.0183534485559775
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.0347331523657797
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.015
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2187 (23.61516034985423%)
+Compiling new constraint *[+tense][+anterior][+tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 40 states, 343 transitions
+new constraint:	*[+tense][+anterior][+tense]	(tier=default)	O = 0.0	E = 51.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.9410607087667575
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.693132400691343
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.826021637802419
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.739100374077221
+4	*[+high][+anterior]	(tier=default)	weight=	1.5489556206917847
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.361076263773112
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.523561730691314
+7	*[+anterior][+high]	(tier=default)	weight=	3.7504938689355987
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.15255353131117
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.1739345178537803
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.3351370826770954
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2119 (22.880898391102473%)
+Compiling new constraint *[-back,-tense][-word_boundary][+high,-tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 40 states, 343 transitions
+new constraint:	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	O = 0.0	E = 118.33333333333334
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.7265298184478155
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.852705256145199
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.913051036729409
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.659324390254294
+4	*[+high][+anterior]	(tier=default)	weight=	1.4320585709073175
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.062344198526806
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.5792122697418165
+7	*[+anterior][+high]	(tier=default)	weight=	3.682455340896462
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.0879827162728577
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.101083874708001
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.2039186530536123
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.54427298913351
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.024
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2143 (23.140049670661917%)
+Compiling new constraint *[-back,-tense][+dorsal][-tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 42 states, 361 transitions
+new constraint:	*[-back,-tense][+dorsal][-tense]	(tier=default)	O = 0.0	E = 64.66666666666666
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.792192921445444
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.8648238082144
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.938208195143362
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.63885366537527
+4	*[+high][+anterior]	(tier=default)	weight=	1.467446741533625
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.102403327268953
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.509293362503937
+7	*[+anterior][+high]	(tier=default)	weight=	3.7266681698277297
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.1290803795911515
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.1428221902642237
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.2653500415507093
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.129977443007783
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.1491084442492334
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.0
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2103 (22.70813087139618%)
+Compiling new constraint *[-back,-tense][+anterior][-tense]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 42 states, 361 transitions
+new constraint:	*[-back,-tense][+anterior][-tense]	(tier=default)	O = 0.0	E = 62.666666666666664
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.027296519416708
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.799970981780961
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.9487103238934536
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.670173035699393
+4	*[+high][+anterior]	(tier=default)	weight=	1.4270110313825353
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.167209564367634
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.5200842287587735
+7	*[+anterior][+high]	(tier=default)	weight=	3.8168662707329695
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.214850388688558
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.2355080634050957
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.4253184480180567
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.2204722697958372
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.242067306741201
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.4193238637734655
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.032
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2191 (23.658352229780803%)
+Compiling new constraint *[+back][-anterior][-high]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 43 states, 370 transitions
+new constraint:	*[+back][-anterior][-high]	(tier=default)	O = 0.0	E = 137.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	4.948170788526317
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	5.903962367644214
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	5.998355120258006
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.566908662362213
+4	*[+high][+anterior]	(tier=default)	weight=	1.4287125845908377
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.20588822808068
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.592656321149019
+7	*[+anterior][+high]	(tier=default)	weight=	3.8496491114041045
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.2385113445810805
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.25382221618686
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.4193143373998667
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.2428961343246074
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.2602573532054784
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.413688761260067
+14	*[+back][-anterior][-high]	(tier=default)	weight=	3.7093072994959413
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.031
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.1, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2123 (22.924090271029048%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.2, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2505 (27.048914804016842%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.3, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 133 (30.158730158730158%)
+Compiling new constraint *[-syllabic][-syllabic]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 43 states, 370 transitions
+new constraint:	*[-syllabic][-syllabic]	(tier=default)	O = 0.0	E = 10.666666666666666
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.737990619583892
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	3.679610858132775
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	3.945735678856726
+3	*[-word_boundary][+back]	(tier=default)	weight=	4.758152384079571
+4	*[+high][+anterior]	(tier=default)	weight=	1.4606937289215798
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.167265266973365
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.530688367223296
+7	*[+anterior][+high]	(tier=default)	weight=	3.8590784865618475
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.3153597374908736
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.3475597607369325
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.635154351560026
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.3258999009275683
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.3562002144529766
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.6204781471954184
+14	*[+back][-anterior][-high]	(tier=default)	weight=	3.771786982585779
+15	*[-syllabic][-syllabic]	(tier=default)	weight=	3.082115345233157
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.3, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2265 (24.457402008422417%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.4, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2336 (25.2240578771191%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.5, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2434 (26.282258935320158%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.6, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2434 (26.282258935320158%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.7, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	number of constraints evaluated: 421 (95.46485260770974%)
+Compiling new constraint *[+back][+word_boundary]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 43 states, 370 transitions
+new constraint:	*[+back][+word_boundary]	(tier=default)	O = 0.0	E = 4.333333333333333
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	5.506275452968061
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	3.654200906715114
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	3.9638753714852273
+3	*[-word_boundary][+back]	(tier=default)	weight=	2.8154910198177423
+4	*[+high][+anterior]	(tier=default)	weight=	1.4580494189143371
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.179310942460666
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.554258599219267
+7	*[+anterior][+high]	(tier=default)	weight=	3.8595739501969972
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.299275233218005
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.3198201752968868
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.571733722594559
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.3023791470594053
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.3204562975738776
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.5602186644440996
+14	*[+back][-anterior][-high]	(tier=default)	weight=	3.753099182442843
+15	*[-syllabic][-syllabic]	(tier=default)	weight=	3.121943016083558
+16	*[+back][+word_boundary]	(tier=default)	weight=	2.408885345492108
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.7, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 300 (3.2393909944930357%)
+Compiling new constraint *[-word_boundary][-word_boundary][-syllabic]	(tier=default) ...
+
+Intersecting the new constraint with the grammar ...
+expectation graph size: 50 states, 433 transitions
+new constraint:	*[-word_boundary][-word_boundary][-syllabic]	(tier=default)	O = 0.0	E = 5.0
+
+
+Current random field:
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	6.619133735480381
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	3.735707501278551
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	2.2271139044842303
+3	*[-word_boundary][+back]	(tier=default)	weight=	2.8961167536413575
+4	*[+high][+anterior]	(tier=default)	weight=	1.4738955235202698
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.1566298817256255
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.469511853159309
+7	*[+anterior][+high]	(tier=default)	weight=	3.8853610698416996
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.3938575021217363
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.4184224068559277
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.700450573902126
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.400286566926727
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.42471835394631
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.6966780627392413
+14	*[+back][-anterior][-high]	(tier=default)	weight=	3.781309060475905
+15	*[-syllabic][-syllabic]	(tier=default)	weight=	2.3805001894613382
+16	*[+back][+word_boundary]	(tier=default)	weight=	2.4860181783460447
+17	*[-word_boundary][-word_boundary][-syllabic]	(tier=default)	weight=	2.2271139044842303
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.7, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2859 (30.87139617751863%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.8, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2859 (30.87139617751863%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 0.9, 
+Selecting a constraint on projection default
+	Searching constraints of size 1
+	Searching constraints of size 2
+	Searching constraints of size 3
+	number of constraints evaluated: 2859 (30.87139617751863%)
+
+Selecting a new constraint
+accuracy thresholds (by projection): 1.0, 
+--- starting minimization ---
+... current parameter settings ...
+...   tolx   ... 4.9E-324
+...   tolfx   ... 4.9E-324
+... maxFun  ... 500
+
+... start vector ...
+1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  
+
+... start direction ...
+675.6430707633866  338.79265911062487  177.49619500414516  92.82300117609013  27.400699340697926  70.91516986777961  103.05591973642382  55.324983322090375  25.798608931978833  17.036173636889764  10.905538147339291  25.798608931978833  18.822423190872687  12.388296105993454  19.584598051774538  181.04144972431536  47.14441086486628  177.49619500414516  
+
+Function value: 0.0
+
+... new vector ...
+11.218055378689522  6.123714432199343  3.6843551403699424  2.4038041792714697  1.4143931543051729  2.0724821496051575  2.5585612293466964  1.836704715659208  1.3901640173150416  1.2576457499460874  1.1649293799431986  1.3901640173150416  1.2846600088833315  1.187353798382956  1.2961867236147366  3.737971629060235  1.7129862228419088  3.6843551403699424  
+
+... new direction ...
+-4.1095741838893485  -2.4569053714702176  -1.777060373054302  5.735196121311334  7.072544466123301  37.259474872684294  33.09876642123202  26.158560257912203  21.324350198012134  22.680640680140694  18.790883125242427  21.187350944057513  22.33852895684116  18.656090362275204  32.85784577405264  -1.695934215944461  5.945362022951133  -1.777060373054302  
+... numFun  ... 2
+... numGrad  ... 4
+... numLin  ... 1
+
+
+Function value: 0.0
+
+... new vector ...
+10.891775201917834  5.928648110715901  3.543265200948197  2.8591508211736127  1.975918741963103  5.030703002641104  5.18644209378789  3.9135670092038817  3.0832135744747307  3.058378166317201  2.6568339893880797  3.072336500890528  3.058230420492143  2.6685565188825286  3.9049396619418815  3.6033227114325177  2.185019013836393  3.543265200948197  
+
+... new direction ...
+-10.976777936495408  -5.816971100247711  -3.510120982303094  0.127238399530593  -1.30617923066551  -2.3069174809064066  -1.911980466490517  -0.06708750829459698  0.8447256165793298  0.9775216487199412  2.802994678055848  0.8908996272642197  0.994817015612483  2.7617296855154096  -0.3061205380622023  -3.4148283146861487  0.8056412912009951  -3.510120982303094  
+... numFun  ... 3
+... numGrad  ... 9
+... numLin  ... 2
+
+
+Function value: 0.0
+
+... new vector ...
+6.767725893134635  3.7431729390420156  2.2244891361903223  2.906955143778171  1.485178418660825  4.1639785870072155  4.468098171112644  3.8883617810567  3.4005826708816946  3.425639625285113  3.7099379449783396  3.4070534837128355  3.4319898651431933  3.7061569391960543  3.789928116595558  2.3203487429082887  2.4877038662882276  2.2244891361903223  
+
+... new direction ...
+-11.386707991768194  -0.572081065281306  0.2011376009380217  -0.830552470177588  -0.8646151606882193  -0.5631357837452875  0.10833132052654126  -0.2299463370895937  -0.5153537984365753  -0.5530598657646235  -0.7270230526281212  -0.5185529752337279  -0.5572203537850167  -0.7263721047440193  -0.6604835460260791  4.609442167033615  -0.1291752987902967  0.2011376009380217  
+... numFun  ... 4
+... numGrad  ... 13
+... numLin  ... 3
+
+
+Function value: 0.0
+
+... new vector ...
+6.619133735480381  3.735707501278551  2.2271139044842303  2.8961167536413575  1.4738955235202698  4.1566298817256255  4.469511853159309  3.8853610698416996  3.3938575021217363  3.4184224068559277  3.700450573902126  3.400286566926727  3.42471835394631  3.6966780627392413  3.781309060475905  2.3805001894613382  2.4860181783460447  2.2271139044842303  
+
+... new direction ...
+-6.455221241695985  1.713080486698126  1.5193999460759855  -0.8488295868047464  -0.2786565016212992  0.479668234034909  0.9340249956944016  -0.1792157544977937  -0.856544153147873  -0.9509653811642145  -1.91548298548993  -0.8797342177517908  -0.9623427352670197  -1.8967207307777036  -0.49029127706037823  5.559988728424834  -0.4512201654978685  1.5193999460759855  
+... numFun  ... 5
+... numGrad  ... 15
+... numLin  ... 4
+
+
+Function value: 0.0
+
+... new vector ...
+4.930506423693481  4.183833814663843  2.6245751456108573  2.674070634745718  1.4010015108092368  4.282106739955682  4.7138443180845275  3.838479854401288  3.169793322661193  3.1696584907835743  3.199377603131012  3.1701560769578254  3.172978225261789  3.200513127580156  3.653053310568019  3.834942797779869  2.3679830767499728  2.6245751456108573  
+
+... new direction ...
+-7.083536074619218  -2.2000018185083356  -1.2945394981785752  -0.1794962199565589  -0.40297780663824734  0.05201658593607428  -0.006176591175330148  1.441354594005212E-4  -0.35717821705118663  -0.4156231570078306  -1.1220922897508716  -0.36968454469739137  -0.4150205212259695  -1.0989913097674155  -0.12629826129614333  -0.25537298355338  0.29187437521225745  -1.2945394981785752  
+... numFun  ... 6
+... numGrad  ... 22
+... numLin  ... 5
+
+
+Function value: 0.0
+
+... new vector ...
+4.64184093592105  4.094180202209546  2.5718205790009194  2.6667558750916065  1.384579517063557  4.284226499492913  4.713592612060077  3.8384857281530773  3.1552377358524804  3.152721178672316  3.1536505376181805  3.1550908371831077  3.1560654715278846  3.1557274641558717  3.6479064532897043  3.8245359379735824  2.379877426972993  2.5718205790009194  
+
+... new direction ...
+-3.3931398385726332  -2.6305938574221743  -1.787042750638494  0.2084174758135946  -0.23501874198554096  -0.17814952025412367  -0.4253527866205786  0.09281983938871141  0.09467251876942173  0.08829017817856544  -0.06858552826869335  0.09485080967013859  0.09408451277957042  -0.057249398714211086  0.11875374379236625  -2.6595472676561824  0.47223490041526306  -1.787042750638494  
+... numFun  ... 7
+... numGrad  ... 24
+... numLin  ... 6
+
+
+Function value: 0.0
+
+... new vector ...
+4.069562952774624  3.6505112056979794  2.270422679183727  2.7019070148575546  1.344941878161627  4.254180272988903  4.641853737025874  3.854140476559701  3.1712049522592016  3.1676119664097655  3.1420830839740796  3.1710881236611876  3.1719335164008764  3.1460719321144053  3.6679351453630527  3.3759837359349194  2.4595233152175178  2.270422679183727  
+
+... new direction ...
+-0.31826275669563264  0.1424708520199931  0.05138194060770607  -0.0958676007253656  -0.0745323982526902  -0.03479140634626443  -0.032571737293499936  0.047322823011000104  0.020444725244784134  0.016837182978025833  -0.02876021130886297  0.020376060087330394  0.016260153313473857  -0.027350195849467962  0.012740387876597925  -0.3823015035081121  0.08115940937703758  0.05138194060770607  
+... numFun  ... 8
+... numGrad  ... 28
+... numLin  ... 7
+
+
+Function value: 0.0
+
+... new vector ...
+3.977118377434719  3.69189417350121  2.2853473965114355  2.6740607166292403  1.323292735242514  4.244074545197969  4.6323927480825144  3.8678861574007715  3.1771434540267918  3.1725025990633764  3.1337292145212476  3.177006680521031  3.1766565414372723  3.138127624501984  3.67163579748819  3.2649380687932457  2.483097380912779  2.2853473965114355  
+
+... new direction ...
+0.053324167719432575  0.3555069977476085  0.166523139972122  -0.10800056339210677  -0.07281260444320525  -0.0046509406991653394  0.008628552632454406  0.025432174789310702  0.007212044013263771  0.00483200496808992  -0.012249088445729445  0.0072105153971267055  0.0046719189340426685  -0.011577272026544922  0.0017628248458654893  -0.2694605255912161  0.11661721614934042  0.166523139972122  
+... numFun  ... 9
+... numGrad  ... 31
+... numLin  ... 8
+
+
+Function value: 0.0
+
+... new vector ...
+3.988439375224341  3.767370155740106  2.3207011241019795  2.651131636031619  1.30783424110726  4.243087126329062  4.6342246346258475  3.873285540211394  3.1786746084324715  3.1735284588170813  3.131128669418535  3.1785375103935647  3.1776484140944112  3.1356697095146937  3.6720100543596432  3.207730199546056  2.5078558216484126  2.3207011241019795  
+
+... new direction ...
+0.018872888110799662  0.009177827063322347  -0.025518931783163414  -0.04671772491594655  -0.011034179832712796  0.021288417835640124  0.025436666677217303  -0.013983340896812194  -0.01009657014585059  -0.008525191908214325  0.01525914059244778  -0.010051286445287393  -0.008250623505948892  0.014544502948627469  -0.006588672791841086  -0.06256313228133878  0.05051374457864086  -0.025518931783163414  
+... numFun  ... 10
+... numGrad  ... 33
+... numLin  ... 9
+
+
+Function value: 0.0
+
+... new vector ...
+3.992679423615881  3.769432078146958  2.3149679525266604  2.640635870188928  1.305355264059498  4.2478698559925085  4.639939324237616  3.870143994427315  3.1764062780234927  3.1716131596839663  3.134556840779773  3.176279353577552  3.1757948004492595  3.1389373279083927  3.670529820316532  3.193674549618932  2.5192044144124823  2.3149679525266604  
+
+... new direction ...
+-0.005892173188314722  -0.004020883537195159  -0.0020928956487696456  -0.03746679494677055  0.0011665771388718878  0.0013994280020021939  -0.001316443968598569  -0.0023139742988167672  -0.0035417273568452323  -0.0027676665153293757  0.005425877986450013  -0.00353799885002583  -0.0026857332242759555  0.005130364851349682  -0.0013249976950086915  0.0182284954530737  0.036420671861963974  -0.0020928956487696456  
+... numFun  ... 11
+... numGrad  ... 35
+... numLin  ... 10
+
+
+Function value: 0.0
+
+... new vector ...
+3.989381992448313  3.767181874992203  2.3137967073642804  2.61966836406549  1.3060081144924618  4.248653016528204  4.639202603976063  3.868849027234395  3.174424224577296  3.170064293155878  3.137593319615701  3.174299386712011  3.1742917861693902  3.141808429015092  3.6697883131413627  3.203875744852642  2.5395864796884258  2.3137967073642804  
+
+... new direction ...
+0.017013096150377847  -0.011756895751682483  9.895771665182397E-4  -0.018052402033590112  0.0036803800663972428  -0.006461368580683374  -0.0033238996944047537  0.005445194024055746  0.00566637283077843  0.004676585285238616  -0.008244131391332584  0.005646414779282762  0.004556140919891648  -0.00782319937934375  0.003007645587214152  0.0031206841915978794  0.02113890300336308  9.895771665182397E-4  
+... numFun  ... 12
+... numGrad  ... 38
+... numLin  ... 11
+
+
+Function value: 0.0
+
+... new vector ...
+3.9934162017143175  3.7643940357087677  2.314031359619185  2.615387710684481  1.306880820038533  4.247120872539311  4.638414428394857  3.8701402120953325  3.1757678561877043  3.1711732226255176  3.1356384402124986  3.1756382857942795  3.1753721554186902  3.139953362591733  3.6705014973607164  3.204615733210477  2.544599015773308  2.314031359619185  
+
+... new direction ...
+-0.0042801838649496535  -0.004416531085432335  -0.0018083134272859052  -0.0019910825279698713  5.97464020647134E-4  3.874913047572663E-4  0.0010239915337787945  -1.331049857626161E-4  0.0017826060453741978  0.001362671166160255  -0.00288952248391916  0.0017838234851672184  0.001304459407106119  -0.0027379939210606568  4.4141085483738755E-4  -0.0018620913563532522  0.0013969922529742985  -0.0018083134272859052  
+... numFun  ... 13
+... numGrad  ... 40
+... numLin  ... 12
+
+
+Function value: 0.0
+
+... new vector ...
+3.9928246812700494  3.763783672109397  2.313781451111599  2.6151125435284244  1.3069633894313624  4.247174423750187  4.638555943793751  3.8701218170163365  3.1760142119409114  3.17136154347318  3.135239108857272  3.1758848097973913  3.1755524314143875  3.139574972449699  3.670562500241246  3.2043583926052293  2.544792079787423  2.313781451111599  
+
+... new direction ...
+-4.461578870801426E-4  6.206198035370935E-4  4.18066658261102E-4  -2.0202662848442564E-4  2.2495442780856508E-4  5.576545477097914E-4  4.6755676497690685E-4  -5.11146460216373E-4  3.990215700898544E-4  2.588142903498693E-4  -7.98514688313769E-4  4.0217173841676756E-4  2.4077762859106517E-4  -7.53407805966821E-4  -5.156685350357591E-5  7.168988064798194E-4  -4.528287715819892E-5  4.18066658261102E-4  
+... numFun  ... 14
+... numGrad  ... 42
+... numLin  ... 13
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927445024905173  3.763895203340475  2.313856581632415  2.615076237438195  1.3070038158633372  4.247274639531037  4.638639968153431  3.870029959177376  3.1760859198797897  3.1714080548417485  3.135095608237869  3.1759570838512237  3.1755957014247542  3.139439577962407  3.6705532331914013  3.2044872260810373  2.544783942027385  2.313856581632415  
+
+... new direction ...
+7.273583240868529E-5  9.288482345939614E-5  -5.311188618063463E-5  4.3011701388623585E-5  1.3226983932877078E-4  2.57355464420215E-5  -5.787637637773862E-5  -1.051149175276466E-4  1.3771201152824863E-5  -5.6716516618436195E-6  -7.985264464208156E-5  1.5003768043372855E-5  -7.171319661558216E-6  -7.330953897753995E-5  -2.7776508562299508E-5  -1.1984770277486375E-4  8.61451053897208E-6  -5.311188618063463E-5  
+... numFun  ... 15
+... numGrad  ... 45
+... numLin  ... 14
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927638612574534  3.763919924796045  2.31384244581253  2.6150876850765203  1.3070390197086423  4.247281489091  4.638624564256283  3.8700019826612277  3.1760895851086697  3.1714065453219007  3.1350743553191127  3.175961077129902  3.1755937927656883  3.1394200665024807  3.6705458404258584  3.204455328408748  2.5447862347941856  2.31384244581253  
+
+... new direction ...
+-5.353885851687623E-5  3.234997108481774E-5  1.5287354836394027E-5  6.929193619807832E-6  1.042633100833927E-4  -1.6957412412173958E-5  -6.76826922547946E-6  -8.103322010694297E-6  -8.096727554744764E-6  -6.500631853768099E-6  8.901220205260271E-6  -8.011471410530952E-6  -6.513494503992329E-6  8.394271583611729E-6  1.7649477697508174E-6  -4.409000421848332E-5  -2.5844235357968197E-5  1.5287354836394027E-5  
+... numFun  ... 16
+... numGrad  ... 48
+... numLin  ... 15
+
+
+Function value: 0.0
+
+... new vector ...
+3.992747054382317  3.7639300800727873  2.3138472448065883  2.6150898602833736  1.307071749962563  4.247276165833819  4.638622439566685  3.86999943887294  3.1760870433905084  3.17140450464881  3.1350771495829557  3.1759585621752806  3.175591748054765  3.139422701625423  3.6705463944768337  3.204441487710306  2.544778121792738  2.3138472448065883  
+
+... new direction ...
+2.1584950586120088E-5  1.487858955402304E-5  2.0638597072418702E-5  1.2907085820868502E-5  2.0810956279173712E-5  3.726177278200143E-6  2.703415023725944E-6  -2.900473072274575E-6  -8.869431040463465E-7  2.418493940855665E-6  1.3812148953175011E-5  -1.1427983681554165E-6  2.820992746452206E-6  1.2705418493488738E-5  4.737916911986949E-6  -2.3453537089421537E-6  -8.101784152479814E-6  2.0638597072418702E-5  
+... numFun  ... 17
+... numGrad  ... 50
+... numLin  ... 16
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750364304108  3.7639323616146227  2.313850409610784  2.6150918395070204  1.307074941197002  4.247276737220597  4.638622854119049  3.8699989941029145  3.176086907383141  3.1714048755102473  3.135079267592567  3.1759583869340537  3.1755921806369627  3.139424649924603  3.670547121007773  3.204441128064482  2.5447768794330763  2.313850409610784  
+
+... new direction ...
+9.963295490699044E-7  -5.336194369983466E-6  -3.277083668571693E-7  8.841455698893873E-6  1.4332780304920258E-7  3.7647025904479386E-6  4.777594051860626E-7  -2.4066391217888324E-6  7.772136698005364E-7  2.2071253804772118E-6  5.37657078621093E-6  6.374629260522196E-7  2.3883587960188506E-6  4.902383286112751E-6  1.7510653090020794E-6  -6.765477215822941E-6  -5.877692638021059E-6  -3.277083668571693E-7  
+... numFun  ... 18
+... numGrad  ... 52
+... numLin  ... 17
+
+
+Function value: 0.0
+
+... new vector ...
+3.99275060626992  3.7639310656813567  2.313850330024445  2.6150939867182657  1.307074976005192  4.247277651505756  4.638622970146364  3.869998409633257  3.1760870961350824  3.1714054115265546  3.1350805733315363  3.17595854174652  3.1755927606671115  3.13942584050372  3.670547546266605  3.2044394850195745  2.5447754519930528  2.313850330024445  
+
+... new direction ...
+-1.180597331080859E-6  7.800510784522355E-7  6.176164865538263E-8  5.8203586528064725E-6  -1.6463553329332005E-6  -3.46505376888826E-7  -3.8784378464920875E-7  6.280807741386107E-8  2.113894713080018E-7  3.193276664603832E-7  4.143389542741279E-9  1.9666273841883632E-7  3.136350845999948E-7  -2.488470779971628E-8  -2.442282971375036E-7  1.3468181406520321E-6  -7.067246549658798E-6  6.176164865538263E-8  
+... numFun  ... 19
+... numGrad  ... 55
+... numLin  ... 18
+
+
+Function value: 0.0
+
+... new vector ...
+3.99274993547641  3.763931508891914  2.3138503651162683  2.6150972937381165  1.3070740405766226  4.247277454627827  4.638622749780718  3.869998445319642  3.17608721624266  3.171405592962613  3.1350805756857336  3.1759586534866413  3.1755929388687503  3.1394258263646906  3.6705474075006155  3.204440250256666  2.5447714365146217  2.3138503651162683  
+
+... new direction ...
+2.054334113431477E-6  -4.4556824247508015E-7  -6.382197103934819E-7  3.3956582815584375E-6  -2.2864446925249467E-10  -4.942815358958765E-7  9.693501599296813E-7  1.3425841918584906E-6  -4.566344313159404E-7  -9.746886711924178E-7  -1.5142382689639982E-6  -4.009567429691806E-7  -1.0070191185201216E-6  -1.337373935536514E-6  -1.609599357446764E-7  -4.983435112134708E-7  -1.7471117725809622E-6  -6.382197103934819E-7  
+... numFun  ... 20
+... numGrad  ... 58
+... numLin  ... 19
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503754879443  3.763931413457016  2.3138502284179423  2.6150980210437678  1.30707404052765  4.247277348759178  4.638622957402861  3.8699987328836394  3.1760871184375294  3.17140538419703  3.135080251355675  3.175958567606944  3.1755927231784082  3.1394255399166617  3.6705473730250997  3.204440143517995  2.5447710623061  2.3138502284179423  
+
+... new direction ...
+-3.599236085246105E-7  -4.93170632768519E-7  -6.838013476147174E-8  3.2083230169772505E-8  2.0860125537613356E-7  1.423349121553826E-7  -4.6040508396164334E-8  -3.1064141605314515E-8  -1.0161528163282574E-7  -2.2769748493951874E-7  -2.265135386935947E-7  -8.8745029745703E-8  -2.3726504160120325E-7  -1.969148170067159E-7  6.325057954584318E-8  3.0962644053911E-8  -1.6945600109642515E-7  -6.838013476147174E-8  
+... numFun  ... 21
+... numGrad  ... 60
+... numLin  ... 20
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750312027173  3.7639313265024845  2.313850216361339  2.6150980267005974  1.3070740773076672  4.247277373855291  4.638622949285121  3.8699987274064926  3.1760871005209936  3.1714053440500165  3.1350802114174114  3.175958551959657  3.1755926813444684  3.139425505197166  3.670547384177273  3.204440148977246  2.54477103242807  2.313850216361339  
+
+... new direction ...
+7.859183032939723E-8  -7.592212401801995E-8  7.966217779223281E-8  -5.904614405628575E-9  1.7415572972459337E-7  5.069739484003885E-8  -5.359994600460337E-8  -8.496617304103775E-8  -2.8237146248762853E-8  -6.965972517079626E-8  -5.609446287594919E-8  -2.4139660303051313E-8  -7.2565868133295E-8  -4.786430456224994E-8  2.495982399114157E-8  2.311331942338484E-7  -5.232065986698308E-8  7.966217779223281E-8  
+... numFun  ... 22
+... numGrad  ... 62
+... numLin  ... 21
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750328456993  3.763931310630773  2.313850233014918  2.615098025466223  1.3070741137153616  4.247277384453709  4.6386229380799175  3.8699987096440998  3.176087094617947  3.1714053294874756  3.1350801996907225  3.1759585469132  3.1755926661743907  3.1394254951910123  3.670547389395187  3.204440197296223  2.544771021490304  2.313850233014918  
+
+... new direction ...
+3.826780852370983E-8  -6.219793138800089E-8  -5.049743606579733E-8  1.836653525222416E-8  9.977741930719396E-8  -1.9276776218521212E-8  -5.797800681922665E-9  -3.96375162265523E-8  1.0304492771382197E-8  1.9261358925868022E-8  2.1692404410067254E-8  9.390810064648311E-9  2.0196975066752444E-8  1.9385874648801977E-8  -5.734472313391571E-9  5.912884531745271E-8  1.000411856430856E-8  -5.049743606579733E-8  
+... numFun  ... 23
+... numGrad  ... 64
+... numLin  ... 22
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503405790894  3.7639312909283302  2.3138502170188415  2.615098031284192  1.3070741453218615  4.247277378347404  4.6386229362433475  3.8699986970881213  3.176087097882102  3.1714053355888976  3.1350802065622267  3.1759585498879277  3.1755926725721877  3.139425501331877  3.670547387578678  3.2044402160264713  2.5447710246593096  2.3138502170188415  
+
+... new direction ...
+-1.4595770424397648E-8  4.159767114798154E-9  -2.2678091806990287E-9  -8.436985701513193E-9  1.0426774881878417E-8  2.514825681061619E-9  1.6051162964861504E-9  1.1013485001017328E-8  1.962087529038599E-9  7.695067211293813E-9  4.743558571017433E-9  1.3992907911007425E-9  7.845703266365917E-9  3.5960617744594547E-9  -2.2847893474003927E-9  1.4383906550983955E-8  -5.7539534360603265E-9  -2.2678091806990287E-9  
+... numFun  ... 24
+... numGrad  ... 67
+... numLin  ... 23
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750337883779  3.7639312916964887  2.313850216600059  2.615098029726186  1.307074147247309  4.247277378811801  4.638622936539754  3.869998699121913  3.1760870982444285  3.171405337009898  3.13508020743819  3.175958550146326  3.1755926740210048  3.139425501995939  3.6705473871567604  3.2044402186826577  2.5447710235967627  2.313850216600059  
+
+... new direction ...
+2.2607413506166084E-9  1.4705857278877879E-9  3.863907381738681E-10  -7.821630514746017E-10  4.690382830694517E-10  8.434866689394928E-10  -5.434068066402797E-10  1.3270862048379232E-9  -6.697315125021853E-11  1.1230487419916461E-9  3.61758350625289E-10  -1.7187137002574364E-10  1.1760696180171298E-9  2.0639125434118058E-10  -4.8829773633281657E-11  4.5808185043472266E-10  1.473755706923443E-9  3.863907381738681E-10  
+... numFun  ... 25
+... numGrad  ... 69
+... numLin  ... 24
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382689618  3.7639312919470456  2.313850216665892  2.615098029592922  1.3070741473272234  4.247277378955514  4.6386229364471685  3.8699986993480207  3.1760870982330176  3.1714053372012416  3.135080207499826  3.1759585501170426  3.1755926742213823  3.139425502031104  3.670547387148441  3.204440218760705  2.5447710238478596  2.313850216665892  
+
+... new direction ...
+-9.764419573680354E-11  -1.793048453999316E-10  -3.324413030731428E-10  -9.94089314071736E-10  2.1438122102341235E-11  2.2854703994160188E-10  -1.9389508154534965E-10  2.484522613431378E-10  -8.981651194153226E-11  4.420093061815452E-10  1.116735700407662E-10  -1.3326240553564274E-10  4.6524704342565546E-10  5.1071115355086305E-11  3.337763764001537E-11  -6.8601801991067E-10  1.338079373114525E-9  -3.324413030731428E-10  
+... numFun  ... 26
+... numGrad  ... 71
+... numLin  ... 25
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382391456  3.7639312918922943  2.3138502165643797  2.615098029289373  1.3070741473337697  4.247277379025301  4.638622936387962  3.8699986994238866  3.176087098205592  3.171405337336211  3.135080207533926  3.1759585500763503  3.1755926743634473  3.1394255020466986  3.6705473871586327  3.204440218551227  2.5447710242564474  2.3138502165643797  
+
+... new direction ...
+-1.8932685913062959E-10  2.3116868979979525E-10  2.5139135931437724E-10  -1.3669936069358627E-9  -8.640483850002788E-11  -1.7703419937365802E-10  1.2426097798820086E-10  -2.548126478134899E-10  -3.598480188505076E-11  -8.396312672767631E-11  -3.735988130994728E-11  -2.915255293862691E-11  -8.812273096150064E-11  -2.748116783824215E-11  1.51229060480367E-11  2.8308180839219593E-11  1.1635864551495242E-9  2.5139135931437724E-10  
+... numFun  ... 27
+... numGrad  ... 74
+... numLin  ... 26
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338165185  3.7639312919826002  2.313850216662586  2.6150980287553565  1.3070741473000156  4.247277378956142  4.638622936436504  3.869998699324344  3.1760870981915343  3.1714053373034106  3.1350802075193314  3.1759585500649616  3.175592674329022  3.139425502035963  3.6705473871645404  3.2044402185622856  2.544771024711003  2.313850216662586  
+
+... new direction ...
+1.6181872909289528E-10  -6.49148216703171E-11  -6.135787956659324E-11  -1.2529570261411945E-10  1.2767308546373951E-11  3.436706030639883E-11  -4.296034916539818E-12  8.207634618884128E-11  8.065524567470058E-11  -2.243579851921822E-10  -4.9619875656139364E-11  1.0356894860013906E-10  -2.350742871574382E-10  -1.6474568894911498E-11  -3.1818642390104585E-11  -1.0109444131962406E-11  2.1031466313901164E-10  -6.135787956659324E-11  
+... numFun  ... 28
+... numGrad  ... 77
+... numLin  ... 27
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382034524  3.763931291967249  2.313850216648076  2.6150980287257264  1.3070741473030347  4.247277378964269  4.638622936435488  3.869998699343754  3.176087098210608  3.171405337250354  3.135080207507597  3.175958550089454  3.175592674273431  3.139425502032067  3.670547387157016  3.204440218559895  2.5447710247607387  2.313850216648076  
+
+... new direction ...
+-3.983582458319426E-11  -4.715551410766133E-11  -2.3671353726371917E-11  -1.9335690651715718E-11  1.2893320391080517E-12  7.363566287314101E-12  -9.573198233268948E-12  1.3108205841499787E-11  1.417869561229383E-11  -8.250999278349584E-12  -1.20688977354798E-13  1.518608299394103E-11  -9.300720940412336E-12  8.892560397197298E-13  -1.2516868362816608E-13  6.121030231880281E-11  7.727097269907328E-12  -2.3671353726371917E-11  
+... numFun  ... 29
+... numGrad  ... 79
+... numLin  ... 28
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338193943  3.763931291955992  2.3138502166424253  2.6150980287211105  1.3070741473033425  4.247277378966027  4.638622936433203  3.869998699346883  3.176087098213993  3.1714053372483844  3.1350802075075683  3.175958550093079  3.1755926742712104  3.1394255020322794  3.670547387156986  3.204440218574507  2.5447710247625834  2.3138502166424253  
+
+... new direction ...
+2.7018001374413117E-11  -2.0297914723050155E-11  -2.7605385198790365E-12  -6.930210783744937E-12  -2.716059797172828E-13  -1.3380607966794936E-12  -1.2924054689328317E-14  -1.6123958334502371E-12  1.5108491006065145E-12  7.176148519774539E-12  2.2262287236590715E-12  8.203664445376943E-13  7.330296250420088E-12  1.0761570560959068E-12  1.3923740208421322E-12  5.853111429729011E-11  5.767427139621841E-12  -2.7605385198790365E-12  
+... numFun  ... 30
+... numGrad  ... 81
+... numLin  ... 29
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338200162  3.76393129195132  2.31385021664179  2.6150980287195154  1.3070741473032799  4.247277378965719  4.6386229364332  3.8699986993465116  3.1760870982143405  3.1714053372500364  3.135080207508081  3.175958550093268  3.1755926742728975  3.1394255020325272  3.6705473871573067  3.2044402185879797  2.544771024763911  2.31385021664179  
+
+... new direction ...
+9.802238246979239E-12  -1.913422042834077E-11  -8.782324189274334E-12  9.937518454177166E-13  -9.307682586801852E-13  -2.5248419246949976E-12  3.5468385366017717E-12  -4.7226430163294515E-12  -4.956321413221743E-12  4.6637303194943365E-12  6.767167267067946E-13  -5.477415612139018E-12  5.09866018458607E-12  5.083077922080443E-14  3.408012131051375E-13  1.255119319798417E-12  3.3554297526201215E-12  -8.782324189274334E-12  
+... numFun  ... 31
+... numGrad  ... 83
+... numLin  ... 30
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382019323  3.7639312919478645  2.313850216640204  2.6150980287196948  1.3070741473031118  4.247277378965263  4.6386229364338405  3.869998699345659  3.1760870982134457  3.1714053372508784  3.135080207508203  3.175958550092279  3.175592674273818  3.1394255020325366  3.6705473871573684  3.204440218588206  2.5447710247645166  2.313850216640204  
+
+... new direction ...
+-7.880401927145058E-13  -5.499521602883332E-13  5.94638013191864E-13  9.714023761019247E-14  2.296301743921086E-13  1.5231321279543946E-13  -6.102746144404043E-14  -1.6723684661042156E-13  -1.679253238616056E-12  -5.382324952332849E-15  -2.439953246701373E-13  -1.6983804286668774E-12  7.392252132251477E-14  -2.1917131192594336E-13  -2.2921383168479295E-13  5.383690811248221E-13  -2.788690938554916E-13  5.94638013191864E-13  
+... numFun  ... 32
+... numGrad  ... 85
+... numLin  ... 31
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382017573  3.7639312919477423  2.313850216640336  2.6150980287197165  1.3070741473031628  4.247277378965297  4.638622936433827  3.8699986993456217  3.1760870982130727  3.171405337250877  3.1350802075081488  3.1759585500919014  3.1755926742738345  3.1394255020324877  3.6705473871573173  3.2044402185883256  2.544771024764455  2.313850216640336  
+
+... new direction ...
+2.609226950983676E-13  1.1091927825085656E-13  8.227176302482916E-15  1.7452116581849177E-13  1.4023810856485887E-13  3.811131543411539E-14  -6.178740472843885E-14  2.416504194626156E-14  -1.0311976282855608E-13  -1.9218539456404716E-14  -4.0645525541120274E-14  -1.0044719004746065E-13  -1.5190142945986475E-14  -2.853328120908659E-14  -7.001854046271737E-15  -3.302364230569324E-14  -1.6622962748286144E-13  8.227176302482916E-15  
+... numFun  ... 33
+... numGrad  ... 87
+... numLin  ... 32
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382018137  3.7639312919477663  2.3138502166403376  2.6150980287197543  1.3070741473031933  4.247277378965305  4.638622936433814  3.869998699345627  3.1760870982130505  3.171405337250873  3.13508020750814  3.1759585500918797  3.1755926742738314  3.1394255020324815  3.670547387157316  3.2044402185883185  2.544771024764419  2.3138502166403376  
+
+... new direction ...
+-4.609985156012043E-14  -6.435934788850671E-15  -5.825305789578901E-14  1.9406979831517782E-13  1.2185627506719688E-13  8.99364002010132E-15  -2.343583888138588E-14  -1.3772966092803331E-14  -1.5582461367801267E-14  -7.230160138950877E-15  -1.7169574097221246E-14  -1.4009417967192574E-14  -7.304832685731027E-15  -1.0720825040161668E-14  1.0390639920586631E-15  -8.456010544551974E-14  -1.9989314149420538E-13  -5.825305789578901E-14  
+... numFun  ... 34
+... numGrad  ... 89
+... numLin  ... 33
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338201798  3.763931291947764  2.313850216640318  2.61509802871982  1.3070741473032346  4.2472773789653075  4.638622936433806  3.869998699345622  3.176087098213045  3.1714053372508704  3.135080207508134  3.1759585500918748  3.1755926742738287  3.139425502032478  3.6705473871573164  3.2044402185882896  2.544771024764351  2.313850216640318  
+
+... new direction ...
+-4.930448639418452E-14  5.001339693658321E-14  5.513465708273172E-14  1.6950288583471482E-13  5.1142067587570257E-14  -1.433960699176382E-14  1.6646954576364585E-14  -4.127051925021349E-14  4.117196268303857E-14  8.253862051316823E-15  1.3164817787565324E-14  4.2081530585777795E-14  5.9902387116365475E-15  8.900018954085037E-15  2.3771662358243654E-15  5.013740192448499E-14  -1.7375824791904192E-13  5.513465708273172E-14  
+... numFun  ... 35
+... numGrad  ... 92
+... numLin  ... 34
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338201786  3.7639312919477765  2.3138502166403314  2.6150980287198613  1.307074147303247  4.247277378965304  4.63862293643381  3.869998699345612  3.1760870982130553  3.1714053372508726  3.135080207508137  3.175958550091885  3.17559267427383  3.13942550203248  3.670547387157317  3.204440218588302  2.5447710247643083  2.3138502166403314  
+
+... new direction ...
+1.7596835763842365E-14  -2.463601369903888E-14  3.820200795931477E-15  3.315993804437321E-14  -3.985161440863345E-14  -4.004606571197462E-15  3.3320554212639303E-15  2.3604180697796516E-15  1.0508958663847472E-14  2.5477004163427295E-15  1.1888425426778071E-14  1.1038049216730522E-14  4.112516123504054E-15  7.493066666136412E-15  2.2215199332476355E-16  -6.416767526061682E-15  -2.6452184671496317E-14  3.820200795931477E-15  
+... numFun  ... 36
+... numGrad  ... 94
+... numLin  ... 35
+
+
+Function value: 0.0
+
+... new vector ...
+3.9927503382017924  3.763931291947768  2.3138502166403327  2.615098028719873  1.3070741473032332  4.247277378965302  4.638622936433811  3.869998699345613  3.176087098213059  3.1714053372508735  3.135080207508141  3.175958550091889  3.1755926742738314  3.139425502032483  3.670547387157317  3.2044402185883  2.544771024764299  2.3138502166403327  
+
+... new direction ...
+-7.862963182895295E-15  -2.8475501431471585E-15  -4.336609105998754E-15  8.170630460147014E-15  -2.4564025039820527E-14  5.176880196761197E-15  2.642001501964799E-15  1.2603628749413149E-14  -5.263451915388378E-15  -6.703929040739838E-16  -3.128719272003719E-15  -6.902354734608254E-15  -1.5961323720104772E-15  -2.4942458559477657E-15  5.771353203564389E-17  1.2543823451434547E-14  -1.3977519678732533E-14  -4.336609105998754E-15  
+... numFun  ... 37
+... numGrad  ... 97
+... numLin  ... 36
+
+
+Function value: 0.0
+
+... new vector ...
+3.99275033820179  3.763931291947767  2.3138502166403314  2.615098028719875  1.307074147303226  4.247277378965304  4.638622936433812  3.8699986993456164  3.176087098213057  3.1714053372508735  3.1350802075081403  3.1759585500918868  3.175592674273831  3.139425502032482  3.670547387157317  3.2044402185883034  2.544771024764295  2.3138502166403314  
+
+... new direction ...
+5.933160830122457E-15  4.1771847178581556E-15  -8.45696124820591E-16  2.0889375558123437E-15  -2.2748377993891445E-15  -2.185112089020936E-15  2.4467182690823087E-16  2.9435601394357333E-15  -9.315296579436684E-16  -1.3943517186258804E-15  -2.510192084441757E-15  -1.951275890917041E-16  -5.919046532390023E-16  -6.750776062908588E-16  5.3447643046328E-18  4.714378499200627E-15  4.819195452132759E-16  -8.45696124820591E-16  
+... numFun  ... 38
+... numGrad  ... 99
+... numLin  ... 37
+
+
+Function value: 0.0
+
+... new vector ...
+3.992750338201791  3.7639312919477677  2.3138502166403314  2.6150980287198755  1.3070741473032255  4.247277378965304  4.638622936433812  3.869998699345617  3.176087098213057  3.1714053372508735  3.13508020750814  3.1759585500918868  3.175592674273831  3.139425502032482  3.670547387157317  3.2044402185883043  2.544771024764295  2.3138502166403314  
+
+... new direction ...
+1.3322676295501878E-15  1.3322676295501878E-15  -8.881784197001252E-16  -4.440892098500626E-16  6.661338147750939E-16  -2.6645352591003757E-15  0.0  -8.881784197001252E-16  -4.440892098500626E-16  -1.3322676295501878E-15  -4.440892098500626E-16  4.440892098500626E-16  -4.440892098500626E-16  -4.440892098500626E-16  0.0  -8.881784197001252E-16  0.0  -8.881784197001252E-16  
+... numFun  ... 39
+... numGrad  ... 101
+... numLin  ... 38
+
+
+... final vector ...
+3.992750338201791  3.7639312919477677  2.3138502166403314  2.6150980287198755  1.3070741473032255  4.247277378965304  4.638622936433812  3.869998699345617  3.176087098213057  3.1714053372508735  3.13508020750814  3.1759585500918868  3.175592674273831  3.139425502032482  3.670547387157317  3.2044402185883043  2.544771024764295  2.3138502166403314  
+... numFun  ... 40
+... numLin  ... 39
+
+--- end of minimization ---
+Observed: 1 x 18 matrix
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Expected: 1 x 18 matrix
+3.99275 3.763931 2.31385 2.615098 1.307074 4.247277 4.638623 3.869999 3.176087 3.171405 3.13508 3.175959 3.175593 3.139426 3.670547 3.20444 2.544771 2.31385
+0	*[+syllabic][+syllabic]	(tier=default)	weight=	3.992750338201791
+1	*[+word_boundary][-syllabic]	(tier=default)	weight=	3.7639312919477677
+2	*[-syllabic][+word_boundary]	(tier=default)	weight=	2.3138502166403314
+3	*[-word_boundary][+back]	(tier=default)	weight=	2.6150980287198755
+4	*[+high][+anterior]	(tier=default)	weight=	1.3070741473032255
+5	*[-high,-back][-word_boundary][+high]	(tier=default)	weight=	4.247277378965304
+6	*[+high][-word_boundary][-high]	(tier=default)	weight=	4.638622936433812
+7	*[+anterior][+high]	(tier=default)	weight=	3.869998699345617
+8	*[+tense][-word_boundary][+high,+tense]	(tier=default)	weight=	3.176087098213057
+9	*[+tense][+dorsal][+tense]	(tier=default)	weight=	3.1714053372508735
+10	*[+tense][+anterior][+tense]	(tier=default)	weight=	3.13508020750814
+11	*[-back,-tense][-word_boundary][+high,-tense]	(tier=default)	weight=	3.1759585500918868
+12	*[-back,-tense][+dorsal][-tense]	(tier=default)	weight=	3.175592674273831
+13	*[-back,-tense][+anterior][-tense]	(tier=default)	weight=	3.139425502032482
+14	*[+back][-anterior][-high]	(tier=default)	weight=	3.670547387157317
+15	*[-syllabic][-syllabic]	(tier=default)	weight=	3.2044402185883043
+16	*[+back][+word_boundary]	(tier=default)	weight=	2.544771024764295
+17	*[-word_boundary][-word_boundary][-syllabic]	(tier=default)	weight=	2.3138502166403314
+done
+
+Testing on a word list ...
+number of test words: 4
+
+Generating a random sample with the current field ...
+8 acceptance rate: NaN
+7 acceptance rate: NaN
+6 acceptance rate: NaN
+5 acceptance rate: NaN
+4 acceptance rate: NaN
+3 acceptance rate: NaN
+2 acceptance rate: NaN
+1 acceptance rate: NaN
+
+total number of samples: 4440
+getRandomSample() time: 0.016
+total number of samples: 4440
+number of distinct samples: 72
+S S i , S S e , S k e , S k E , S I I , S e I , S e e , S E i , S s e , k S e , k e S , k E i , k E s , i S S , i S i , i S I , i S e , i S E , i k I , i s k , i s I , I S i , I S I , I S e , I S E , I k i , I k e , I k s , I e k , I s e , e S I , e S e , e S E , e S a , e k I , e k e , e k E , e k a , e E s , e s S , e s e , e s E , e s a , E S i , E S e , E S E , E S a , E k i , E k e , E k E , E I e , E s e , E s E , a S i , a S I , a S e , a S E , a k i , a k I , a k e , a k E , a k a , a I I , a s i , a s I , a s e , a s E , a s a , a s s , s k i , s E i , s E I , 

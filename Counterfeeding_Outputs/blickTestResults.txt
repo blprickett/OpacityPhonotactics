@@ -1,0 +1,7 @@
+word	score	*[+syllabic][+syllabic]	*[+word_boundary][-syllabic]	*[-syllabic][+word_boundary]	*[-word_boundary][+back]	*[-anterior][-high]	*[-high,-back][-word_boundary][+high]	*[+high][-word_boundary][-high]	*[-back,-tense][-word_boundary][-high,-tense]	*[-high][+anterior][+high]	*[+tense][-word_boundary][-high,+tense]	*[+tense][+dorsal][+tense]	*[+tense][-anterior][+tense]	*[-back,-tense][+dorsal][-tense]	*[-back,-tense][-anterior][-tense]	*[-syllabic][-syllabic]	*[+back][+word_boundary]	*[-high,-back][-anterior]	annotation
+word	score	default	default	default	default	default	default	default	default	default	default	default	default	default	default	default	default	default	annotation
+word	score	4.092	3.737	3.946	2.455	3.842	3.891	4.251	3.182	3.7	3.176	3.179	3.137	3.179	3.137	3.444	2.371	1.507	annotation
+e s i 	7.591	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	Faithful
+e S i 	8.535	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	1	Pal_Only
+e s e 	3.176	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Harm_Only
+e S e 	11.662	0	0	0	0	1	0	0	0	0	1	0	1	0	0	0	0	1	Both

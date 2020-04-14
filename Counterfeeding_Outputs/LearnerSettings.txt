@@ -1,0 +1,21 @@
+; This file is a record of the settings for a run of the phonotactic learning program, indicating time of run and the settings that were used.
+; Where a field is left blank, it means that the default setting for the program was used (see manual).
+; 
+; Location of the input files:  C:\Users\Brandon\OneDrive\Research\Research_Software\UCLAPhonotacticLearner\Opacity_Denial
+; Time and date that the program ran:  Fri Jan 17 09:07:42 EST 2020
+
+Task 0
+FeatureFile Features.txt
+LearningFile Counterfeeding.txt
+TestFile Counterfeed_Test.txt
+ProjectionsFile 
+NGramConstraints 
+UserConstraints 
+MaxConstraints 
+Sigma2 
+LearningSampleSize 
+MaxGramSize 
+MaxOE 
+Smoothing 
+MaxPath 
+AllowComplements false
